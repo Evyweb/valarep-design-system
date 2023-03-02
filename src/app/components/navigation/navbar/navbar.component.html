@@ -1,23 +1,23 @@
 <div>
-  <div class="flex items-center justify-between text-gray-400 bg-gray-800 select-none py-4 px-2 sm:px-6">
+  <div class="flex select-none items-center justify-between bg-gray-800 px-2 py-4 text-gray-400 sm:px-6">
 
-    <div class="hidden sm:flex sm:justify-between sm:space-x-6">
-      <a class="font-medium px-3 py-1 rounded-md text-white bg-gray-900" href="#">Dashboard</a>
-      <a class="font-medium px-3 py-1 rounded-md hover:text-white hover:bg-gray-700" href="#">Team</a>
-      <a class="font-medium px-3 py-1 rounded-md hover:text-white hover:bg-gray-700" href="#">Projects</a>
-      <a class="font-medium px-3 py-1 rounded-md hover:text-white hover:bg-gray-700" href="#">Calendar</a>
+    <div class="hidden sm:space-x-6 sm:flex sm:justify-between">
+      <a class="rounded-md bg-gray-900 px-3 py-1 font-medium text-white" href="#">Dashboard</a>
+      <a class="rounded-md px-3 py-1 font-medium hover:bg-gray-700 hover:text-white" href="#">Team</a>
+      <a class="rounded-md px-3 py-1 font-medium hover:bg-gray-700 hover:text-white" href="#">Projects</a>
+      <a class="rounded-md px-3 py-1 font-medium hover:bg-gray-700 hover:text-white" href="#">Calendar</a>
     </div>
 
     <bars-3-outline-icon
       *ngIf="!isMenuOpen"
       (click)="toggleMenu()"
-      class="p-2 rounded hover:text-white hover:cursor-pointer hover:bg-gray-700 sm:hidden"
+      class="rounded p-2 hover:cursor-pointer hover:bg-gray-700 hover:text-white sm:hidden"
     />
 
     <x-mark-outline-icon
       *ngIf="isMenuOpen"
       (click)="toggleMenu()"
-      class="p-2 rounded hover:text-white hover:cursor-pointer hover:bg-gray-700 sm:hidden"
+      class="rounded p-2 hover:cursor-pointer hover:bg-gray-700 hover:text-white sm:hidden"
     />
 
     <div class="flex items-center">
@@ -25,17 +25,17 @@
       <bell-outline-icon class="pr-4 hover:cursor-pointer hover:text-white"/>
 
       <img
-        class="w-8 h-8 rounded-full mr-2"
+        class="mr-2 h-8 w-8 rounded-full"
         src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
         alt="avatar">
     </div>
 
   </div>
 
-  <div *ngIf="isMenuOpen" class="flex flex-col text-gray-300 bg-gray-800 p-2 sm:hidden">
-    <a class="font-medium px-3 py-2 mb-1 rounded-md text-white bg-gray-900" href="#">Dashboard</a>
-    <a class="font-medium px-3 py-2 mb-1 rounded-md hover:text-white hover:bg-gray-700" href="#">Team</a>
-    <a class="font-medium px-3 py-2 mb-1 rounded-md hover:text-white hover:bg-gray-700" href="#">Projects</a>
-    <a class="font-medium px-3 py-2 mb-1 rounded-md hover:text-white hover:bg-gray-700" href="#">Calendar</a>
+  <div *ngIf="isMenuOpen" class="flex flex-col bg-gray-800 p-2 text-gray-300 sm:hidden">
+    <a class="mb-1 rounded-md bg-gray-900 px-3 py-2 font-medium text-white" href="#">Dashboard</a>
+    <a class="mb-1 rounded-md px-3 py-2 font-medium hover:bg-gray-700 hover:text-white" href="#">Team</a>
+    <a class="mb-1 rounded-md px-3 py-2 font-medium hover:bg-gray-700 hover:text-white" href="#">Projects</a>
+    <a class="mb-1 rounded-md px-3 py-2 font-medium hover:bg-gray-700 hover:text-white" href="#">Calendar</a>
   </div>
 </div>
