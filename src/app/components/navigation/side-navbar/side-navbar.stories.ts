@@ -5,7 +5,7 @@ import { NgHeroiconsModule } from "@dimaslz/ng-heroicons";
 import { SideNavbarComponent } from "./side-navbar.component";
 
 export default {
-  title: 'Page/Side-Navbar',
+  title: 'Navigation/Side-Navbar',
   component: SideNavbarComponent,
   decorators: [
     moduleMetadata({

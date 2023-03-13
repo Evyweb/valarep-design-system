@@ -5,7 +5,7 @@ import { NgHeroiconsModule } from "@dimaslz/ng-heroicons";
 import { DividerComponent } from "./divider.component";
 
 export default {
-  title: 'Sign-in/Divider',
+  title: 'Basics/Divider',
   component: DividerComponent,
   decorators: [
     moduleMetadata({

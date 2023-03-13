@@ -7,7 +7,7 @@ import { ButtonComponent } from "./button.component";
 
 
 export default {
-  title: 'Sign-in/Button',
+  title: 'Basics/Button',
   component: ButtonComponent,
   decorators: [
     moduleMetadata({

@@ -6,7 +6,7 @@ import { SignInFormComponent } from "./form.component";
 
 
 export default {
-  title: 'Sign-in/Page',
+  title: 'Page/Sign-in',
   component: SignInFormComponent,
   decorators: [
     moduleMetadata({

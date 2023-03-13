@@ -475,7 +475,7 @@
         {
             "name": "SignInFormComponent",
             "id": "component-SignInFormComponent-f82cae88f3d8238b25f202528a21437669f166ec08a82d483cd9b10e097ee704bd4e797e4d6d90a25a2ab7598be2c7ee451a93f01be6bde2b49ff8f21d58bd3a",
-            "file": "src/app/components/page/sigin/form.component.ts",
+            "file": "src/app/components/page/form/form.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
@@ -538,13 +538,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-03d83a3838ee0e1b9ac2238a24acbefa7fdce89669d3816dbe3fdd199115edcba6605da381f8ad16f8b05b645d441cf8dea1f45858906f1006c80c8934237088",
+            "id": "module-AppModule-cd4bd9f450278adb60aab587107b26b50f4b1656faab777827ccca6730c86cf3c6a5ec3fb4481d9c763d8f9d03519db783b29124fcfc67941510c0efba3efc36",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent } from './app.component';\r\nimport { NavbarComponent } from './components/navigation/navbar/navbar.component';\r\nimport { NgHeroiconsModule } from \"@dimaslz/ng-heroicons\";\r\nimport { SideNavbarComponent } from './components/navigation/side-navbar/side-navbar.component';\nimport { CheckboxSliderComponent } from './components/basics/checkbox-slider/checkbox-slider.component';\nimport { SettingsComponent } from './components/page/settings/settings.component';\nimport { ButtonComponent } from './components/basics/button/button.component';\nimport { DividerComponent } from './components/basics/divider/divider.component';\nimport { SiginComponent } from './components/page/sigin/sigin.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    NavbarComponent,\r\n    SideNavbarComponent,\r\n    CheckboxSliderComponent,\r\n    SettingsComponent,\r\n    ButtonComponent,\r\n    DividerComponent,\r\n    SiginComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    NgHeroiconsModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule {\r\n}\r\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent } from './app.component';\r\nimport { NavbarComponent } from './components/navigation/navbar/navbar.component';\r\nimport { NgHeroiconsModule } from \"@dimaslz/ng-heroicons\";\r\nimport { SideNavbarComponent } from './components/navigation/side-navbar/side-navbar.component';\r\nimport { CheckboxSliderComponent } from './components/basics/checkbox-slider/checkbox-slider.component';\r\nimport { SettingsComponent } from './components/page/settings/settings.component';\r\nimport { ButtonComponent } from './components/basics/button/button.component';\r\nimport { DividerComponent } from './components/basics/divider/divider.component';\r\nimport { SignInFormComponent } from './components/page/form/form.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    NavbarComponent,\r\n    SideNavbarComponent,\r\n    CheckboxSliderComponent,\r\n    SettingsComponent,\r\n    ButtonComponent,\r\n    DividerComponent,\r\n    SignInFormComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    NgHeroiconsModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule {\r\n}\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -573,6 +573,9 @@
                         },
                         {
                             "name": "SideNavbarComponent"
+                        },
+                        {
+                            "name": "SignInFormComponent"
                         }
                     ]
                 },
@@ -605,37 +608,7 @@
                 "name": "baseTemplate",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/navigation/navbar/navbar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "baseTemplate",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "baseTemplate",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/basics/button/sign-in.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "baseTemplate",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -655,7 +628,27 @@
                 "name": "baseTemplate",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/page/sigin/form.stories.ts",
+                "file": "src/app/components/page/form/form.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "baseTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "baseTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -672,40 +665,20 @@
                 "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
             },
             {
-                "name": "Default",
+                "name": "baseTemplate",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/navigation/navbar/navbar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "baseTemplate.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "baseTemplate.bind({})"
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/basics/button/sign-in.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "baseTemplate.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -725,7 +698,27 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/page/sigin/form.stories.ts",
+                "file": "src/app/components/page/form/form.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "baseTemplate.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "baseTemplate.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -736,6 +729,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/basics/divider/divider.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "baseTemplate.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/navigation/navbar/navbar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -746,50 +749,6 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
-            "src/app/components/navigation/navbar/navbar.stories.ts": [
-                {
-                    "name": "baseTemplate",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/navigation/navbar/navbar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
-                },
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/navigation/navbar/navbar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "baseTemplate.bind({})"
-                }
-            ],
-            "src/app/components/navigation/side-navbar/side-navbar.stories.ts": [
-                {
-                    "name": "baseTemplate",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
-                },
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "baseTemplate.bind({})"
-                }
-            ],
             "src/app/components/basics/button/sign-in.stories.ts": [
                 {
                     "name": "baseTemplate",
@@ -806,28 +765,6 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/basics/button/sign-in.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "baseTemplate.bind({})"
-                }
-            ],
-            "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts": [
-                {
-                    "name": "baseTemplate",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
-                },
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -856,12 +793,12 @@
                     "defaultValue": "baseTemplate.bind({})"
                 }
             ],
-            "src/app/components/page/sigin/form.stories.ts": [
+            "src/app/components/page/form/form.stories.ts": [
                 {
                     "name": "baseTemplate",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/page/sigin/form.stories.ts",
+                    "file": "src/app/components/page/form/form.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -871,7 +808,51 @@
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/page/sigin/form.stories.ts",
+                    "file": "src/app/components/page/form/form.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "baseTemplate.bind({})"
+                }
+            ],
+            "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts": [
+                {
+                    "name": "baseTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "baseTemplate.bind({})"
+                }
+            ],
+            "src/app/components/navigation/side-navbar/side-navbar.stories.ts": [
+                {
+                    "name": "baseTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -894,6 +875,28 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/basics/divider/divider.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "baseTemplate.bind({})"
+                }
+            ],
+            "src/app/components/navigation/navbar/navbar.stories.ts": [
+                {
+                    "name": "baseTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/navigation/navbar/navbar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/navigation/navbar/navbar.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -1065,6 +1068,35 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/components/page/form/form.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SignInFormComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/page/form/form.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "baseTemplate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/page/form/form.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/components/page/settings/settings.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1085,35 +1117,6 @@
             },
             {
                 "filePath": "src/app/components/page/settings/settings.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/page/sigin/form.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "SignInFormComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/3",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/page/sigin/form.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "baseTemplate",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/components/page/sigin/form.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

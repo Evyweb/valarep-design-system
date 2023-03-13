@@ -4,7 +4,7 @@ import { NgHeroiconsModule } from "@dimaslz/ng-heroicons";
 import { CheckboxSliderComponent } from "./checkbox-slider.component";
 
 export default {
-  title: 'Page/Checkbox slider',
+  title: 'Basics/Checkbox slider',
   component: CheckboxSliderComponent,
   decorators: [
     moduleMetadata({
