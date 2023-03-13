@@ -1,0 +1,48 @@
+<div [ngClass]="{'h-full border-r-2 fixed':isMenuOpen}" class="bg-white z-10 w-full sm:w-1/4">
+    <div class="hidden lg:flex lg:flex-col h-full border-r-2 pt-4">
+        <a href="#"
+            class="flex gap-3 pl-2 border-l-4 bg-teal-50 border-l-teal-500 py-2"><user-circle-outline-icon></user-circle-outline-icon>
+            Profile</a>
+        <a href="#"
+            class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><cog-outline-icon></cog-outline-icon>
+            Account</a>
+        <a href="#"
+            class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><key-outline-icon></key-outline-icon>
+            Password</a>
+        <a href="#"
+            class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><bell-outline-icon></bell-outline-icon>
+            Notification</a>
+        <a href="#"
+            class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><credit-card-outline-icon></credit-card-outline-icon>
+            Billing</a>
+        <a href="#"
+            class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><squares-plus-outline-icon></squares-plus-outline-icon>
+            Integrations</a>
+    </div>
+    <div class="hover:bg-gray-700 hover:text-gray-200 p-2 w-10 rounded-lg lg:hidden">
+        <bars-3-outline-icon *ngIf="!isMenuOpen" (click)="toggleMenu()" class=""></bars-3-outline-icon>
+
+        <x-mark-outline-icon *ngIf="isMenuOpen" (click)="toggleMenu()" class=""></x-mark-outline-icon>
+    </div>
+
+    <div *ngIf="isMenuOpen" class="pt-4 flex flex-col text-gray-700 font-medium lg:hidden">
+        <a href="#"
+            class="flex gap-3 pl-2 border-l-4 bg-teal-50 border-l-teal-500 py-2"><user-circle-outline-icon></user-circle-outline-icon>
+            Profile</a>
+        <a href="#"
+            class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><cog-outline-icon></cog-outline-icon>
+            Account</a>
+        <a href="#"
+            class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><key-outline-icon></key-outline-icon>
+            Password</a>
+        <a href="#"
+            class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><bell-outline-icon></bell-outline-icon>
+            Notification</a>
+        <a href="#"
+            class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><credit-card-outline-icon></credit-card-outline-icon>
+            Billing</a>
+        <a href="#"
+            class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><squares-plus-outline-icon></squares-plus-outline-icon>
+            Integrations</a>
+    </div>
+</div>
