@@ -183,6 +183,68 @@
             "templateData": "<div class=\"flex items-center justify-center w-full mb-12\">\n    <label for=\"toggleB\" class=\"flex items-center cursor-pointer\">\n        <div class=\"relative\">\n            <input type=\"checkbox\" id=\"toggleB\" class=\"sr-only\">\n            <div class=\"bg-dot block bg-gray-200 w-14 h-8 rounded-full transition-colors\"></div>\n            <div class=\"dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition\"></div>\n        </div>\n    </label>\n</div>"
         },
         {
+            "name": "DividerComponent",
+            "id": "component-DividerComponent-ba5826f3d79cf85d7ca999280c33c0a690c87293c0aeb9779893a67e9144154c5b88c74e9223af962418937d622ac3ac86882bb4f798351d8c50cd99a82e745b",
+            "file": "src/app/components/basics/divider/divider.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "val-divider",
+            "styleUrls": [
+                "./divider.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./divider.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'val-divider',\n  templateUrl: './divider.component.html',\n  styleUrls: ['./divider.component.scss']\n})\nexport class DividerComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./divider.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"flex items-center mx-2\">\n    <div class=\"flex-grow border-t-2\"></div>\n    <p class=\"mx-2 text-gray-500\">Or continue with</p>\n    <div class=\"flex-grow border-t-2\"></div>\n</div>"
+        },
+        {
             "name": "NavbarComponent",
             "id": "component-NavbarComponent-e0d0bacc14c4d99ee1abdfae9c3e03e2157f5e0a62e5c47d072afff10d5ce57e2d732f72d0b927dceda8af6b0988a06ac80d13dddbb170c3def0d263b392f745",
             "file": "src/app/components/navigation/navbar/navbar.component.ts",
@@ -414,13 +476,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-84b8ae8241dac5c1f7187ff911eb31d86ee6c6e495f85c7c0e18536663764e93ae8da04fd88a6f71abdc9195e4dd70842954aca073a7e5e35dffdd31553a7b7f",
+            "id": "module-AppModule-8bdd1c0ded266660fbac11606f3fca805172dcbaac4c9df6635c38e871a6ef01c2459318472505cf50c5486ab8f4628ccdd863f2457ea76229d09b50bfd90a00",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent } from './app.component';\r\nimport { NavbarComponent } from './components/navigation/navbar/navbar.component';\r\nimport { NgHeroiconsModule } from \"@dimaslz/ng-heroicons\";\r\nimport { SideNavbarComponent } from './components/navigation/side-navbar/side-navbar.component';\nimport { CheckboxSliderComponent } from './components/basics/checkbox-slider/checkbox-slider.component';\nimport { SettingsComponent } from './components/page/settings/settings.component';\nimport { ButtonComponent } from './components/basics/button/button.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    NavbarComponent,\r\n    SideNavbarComponent,\r\n    CheckboxSliderComponent,\r\n    SettingsComponent,\r\n    ButtonComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    NgHeroiconsModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule {\r\n}\r\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent } from './app.component';\r\nimport { NavbarComponent } from './components/navigation/navbar/navbar.component';\r\nimport { NgHeroiconsModule } from \"@dimaslz/ng-heroicons\";\r\nimport { SideNavbarComponent } from './components/navigation/side-navbar/side-navbar.component';\nimport { CheckboxSliderComponent } from './components/basics/checkbox-slider/checkbox-slider.component';\nimport { SettingsComponent } from './components/page/settings/settings.component';\nimport { ButtonComponent } from './components/basics/button/button.component';\nimport { DividerComponent } from './components/basics/divider/divider.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    NavbarComponent,\r\n    SideNavbarComponent,\r\n    CheckboxSliderComponent,\r\n    SettingsComponent,\r\n    ButtonComponent,\r\n    DividerComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    NgHeroiconsModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule {\r\n}\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -437,6 +499,9 @@
                         },
                         {
                             "name": "CheckboxSliderComponent"
+                        },
+                        {
+                            "name": "DividerComponent"
                         },
                         {
                             "name": "NavbarComponent"
@@ -478,7 +543,17 @@
                 "name": "baseTemplate",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/navigation/navbar/navbar.stories.ts",
+                "file": "src/app/components/basics/button/sign-in.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "baseTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -508,7 +583,7 @@
                 "name": "baseTemplate",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
+                "file": "src/app/components/navigation/navbar/navbar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -518,7 +593,7 @@
                 "name": "baseTemplate",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/basics/button/sign-in.stories.ts",
+                "file": "src/app/components/basics/divider/divider.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -528,7 +603,17 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/navigation/navbar/navbar.stories.ts",
+                "file": "src/app/components/basics/button/sign-in.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "baseTemplate.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -558,7 +643,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
+                "file": "src/app/components/navigation/navbar/navbar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -568,7 +653,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/basics/button/sign-in.stories.ts",
+                "file": "src/app/components/basics/divider/divider.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -579,12 +664,12 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
-            "src/app/components/navigation/navbar/navbar.stories.ts": [
+            "src/app/components/basics/button/sign-in.stories.ts": [
                 {
                     "name": "baseTemplate",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/navigation/navbar/navbar.stories.ts",
+                    "file": "src/app/components/basics/button/sign-in.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -594,7 +679,29 @@
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/navigation/navbar/navbar.stories.ts",
+                    "file": "src/app/components/basics/button/sign-in.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "baseTemplate.bind({})"
+                }
+            ],
+            "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts": [
+                {
+                    "name": "baseTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -645,12 +752,12 @@
                     "defaultValue": "baseTemplate.bind({})"
                 }
             ],
-            "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts": [
+            "src/app/components/navigation/navbar/navbar.stories.ts": [
                 {
                     "name": "baseTemplate",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
+                    "file": "src/app/components/navigation/navbar/navbar.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -660,19 +767,19 @@
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
+                    "file": "src/app/components/navigation/navbar/navbar.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "baseTemplate.bind({})"
                 }
             ],
-            "src/app/components/basics/button/sign-in.stories.ts": [
+            "src/app/components/basics/divider/divider.stories.ts": [
                 {
                     "name": "baseTemplate",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/basics/button/sign-in.stories.ts",
+                    "file": "src/app/components/basics/divider/divider.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -682,7 +789,7 @@
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/basics/button/sign-in.stories.ts",
+                    "file": "src/app/components/basics/divider/divider.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -758,6 +865,35 @@
             },
             {
                 "filePath": "src/app/components/basics/checkbox-slider/checkbox-slider.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/basics/divider/divider.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DividerComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/basics/divider/divider.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "baseTemplate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/basics/divider/divider.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

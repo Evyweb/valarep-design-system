@@ -8,6 +8,7 @@ import { SideNavbarComponent } from './components/navigation/side-navbar/side-na
 import { CheckboxSliderComponent } from './components/basics/checkbox-slider/checkbox-slider.component';
 import { SettingsComponent } from './components/page/settings/settings.component';
 import { ButtonComponent } from './components/basics/button/button.component';
+import { DividerComponent } from './components/basics/divider/divider.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ButtonComponent } from './components/basics/button/button.component';
     SideNavbarComponent,
     CheckboxSliderComponent,
     SettingsComponent,
-    ButtonComponent
+    ButtonComponent,
+    DividerComponent
   ],
   imports: [
     BrowserModule,
