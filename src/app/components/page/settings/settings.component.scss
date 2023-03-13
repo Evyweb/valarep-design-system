@@ -1,0 +1,31 @@
+input:checked ~ .dot-1 {
+    transform: translateX(100%);
+  }
+
+  input:checked ~ .bg-dot-1 {
+  background-color: #14B8A6;
+}
+
+input:checked ~ .dot-2 {
+    transform: translateX(100%);
+  }
+
+  input:checked ~ .bg-dot-2 {
+  background-color: #14B8A6;
+}
+
+input:checked ~ .dot-3 {
+    transform: translateX(100%);
+  }
+
+  input:checked ~ .bg-dot-3 {
+  background-color: #14B8A6;
+}
+
+input:checked ~ .dot-4 {
+    transform: translateX(100%);
+  }
+
+  input:checked ~ .bg-dot-4 {
+  background-color: #14B8A6;
+}
