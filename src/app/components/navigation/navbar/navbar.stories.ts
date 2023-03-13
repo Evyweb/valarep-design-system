@@ -1,12 +1,12 @@
-import {CardComponent} from "./card.component";
+import {NavbarComponent} from "./navbar.component";
 import {Meta, moduleMetadata, Story} from "@storybook/angular";
 import {CommonModule} from "@angular/common";
 import {NgHeroiconsModule} from "@dimaslz/ng-heroicons";
 import "@angular/forms";
 
 export default {
-  title: 'Cards/Card',
-  component: CardComponent,
+  title: 'Navigation/Navbar',
+  component: NavbarComponent,
   decorators: [
     moduleMetadata({
       imports: [
@@ -17,7 +17,7 @@ export default {
   ],
   args: {
   }
-} as Meta<CardComponent>;
+} as Meta<NavbarComponent>;
 
 const baseTemplate: Story = (args) => ({
   props: args,
