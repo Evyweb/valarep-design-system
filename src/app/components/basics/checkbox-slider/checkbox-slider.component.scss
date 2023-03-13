@@ -1,0 +1,7 @@
+input:checked ~ .dot {
+    transform: translateX(100%);
+  }
+
+input:checked ~ .bg-dot {
+  background-color: #14B8A6;
+}

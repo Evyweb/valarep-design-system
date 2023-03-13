@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navigation/navbar/navbar.component';
 import { NgHeroiconsModule } from "@dimaslz/ng-heroicons";
 import { SideNavbarComponent } from './components/navigation/side-navbar/side-navbar.component';
+import { CheckboxSliderComponent } from './components/basics/checkbox-slider/checkbox-slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SideNavbarComponent
+    SideNavbarComponent,
+    CheckboxSliderComponent
   ],
   imports: [
     BrowserModule,
