@@ -2,6 +2,7 @@ import {NavbarComponent} from "./navbar.component";
 import {Meta, moduleMetadata, Story} from "@storybook/angular";
 import {CommonModule} from "@angular/common";
 import {NgHeroiconsModule} from "@dimaslz/ng-heroicons";
+import "@angular/forms";
 
 export default {
   title: 'Navigation/Navbar',

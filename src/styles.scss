@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  --text-color: #222;
+  --bkg-color: #fff;
+  --btn-txt-color: #464242;
+  --btn-bg-color: white;
+  --btn-border: 1px solid rgb(66, 64, 64);
+}
+
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #252222;
+  --btn-txt-color: white;
+  --btn-bg-color: #464242;
+  --btn-border: 1px solid white;
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+h1,
+p {
+  color: var(--text-color);
+}
+button {
+  padding: 10px;
+  border: var(--btn-border);
+  border-radius: 2px;
+  color: var(--btn-txt-color);
+  background-color: var(--btn-bg-color);
+}
