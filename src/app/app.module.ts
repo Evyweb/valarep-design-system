@@ -7,6 +7,7 @@ import { NgHeroiconsModule } from "@dimaslz/ng-heroicons";
 import { SideNavbarComponent } from './components/navigation/side-navbar/side-navbar.component';
 import { CheckboxSliderComponent } from './components/basics/checkbox-slider/checkbox-slider.component';
 import { SettingsComponent } from './components/page/settings/settings.component';
+import { ButtonComponent } from './components/basics/button/button.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SettingsComponent } from './components/page/settings/settings.component
     NavbarComponent,
     SideNavbarComponent,
     CheckboxSliderComponent,
-    SettingsComponent
+    SettingsComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
