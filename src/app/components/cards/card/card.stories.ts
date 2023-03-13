@@ -1,4 +1,4 @@
-import {CardComponent} from "./c.component";
+import {CardComponent} from "./card.component";
 import {Meta, moduleMetadata, Story} from "@storybook/angular";
 import {CommonModule} from "@angular/common";
 import {NgHeroiconsModule} from "@dimaslz/ng-heroicons";
