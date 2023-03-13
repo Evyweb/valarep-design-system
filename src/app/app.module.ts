@@ -9,6 +9,7 @@ import { CheckboxSliderComponent } from './components/basics/checkbox-slider/che
 import { SettingsComponent } from './components/page/settings/settings.component';
 import { ButtonComponent } from './components/basics/button/button.component';
 import { DividerComponent } from './components/basics/divider/divider.component';
+import { SignInFormComponent } from './components/page/form/form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DividerComponent } from './components/basics/divider/divider.component'
     CheckboxSliderComponent,
     SettingsComponent,
     ButtonComponent,
-    DividerComponent
+    DividerComponent,
+    SignInFormComponent
   ],
   imports: [
     BrowserModule,

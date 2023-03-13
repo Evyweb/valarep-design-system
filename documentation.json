@@ -471,18 +471,80 @@
                 "OnInit"
             ],
             "templateData": "<div [ngClass]=\"{'h-full border-r-2 fixed':isMenuOpen}\" class=\"bg-white z-10 w-full sm:w-1/4\">\n    <div class=\"hidden lg:flex lg:flex-col h-full border-r-2 pt-4\">\n        <a href=\"#\"\n            class=\"flex gap-3 pl-2 border-l-4 bg-teal-50 border-l-teal-500 py-2\"><user-circle-outline-icon></user-circle-outline-icon>\n            Profile</a>\n        <a href=\"#\"\n            class=\"flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500\"><cog-outline-icon></cog-outline-icon>\n            Account</a>\n        <a href=\"#\"\n            class=\"flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500\"><key-outline-icon></key-outline-icon>\n            Password</a>\n        <a href=\"#\"\n            class=\"flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500\"><bell-outline-icon></bell-outline-icon>\n            Notification</a>\n        <a href=\"#\"\n            class=\"flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500\"><credit-card-outline-icon></credit-card-outline-icon>\n            Billing</a>\n        <a href=\"#\"\n            class=\"flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500\"><squares-plus-outline-icon></squares-plus-outline-icon>\n            Integrations</a>\n    </div>\n    <div class=\"hover:bg-gray-700 hover:text-gray-200 p-2 w-10 rounded-lg lg:hidden\">\n        <bars-3-outline-icon *ngIf=\"!isMenuOpen\" (click)=\"toggleMenu()\" class=\"\"></bars-3-outline-icon>\n\n        <x-mark-outline-icon *ngIf=\"isMenuOpen\" (click)=\"toggleMenu()\" class=\"\"></x-mark-outline-icon>\n    </div>\n\n    <div *ngIf=\"isMenuOpen\" class=\"pt-4 flex flex-col text-gray-700 font-medium lg:hidden\">\n        <a href=\"#\"\n            class=\"flex gap-3 pl-2 border-l-4 bg-teal-50 border-l-teal-500 py-2\"><user-circle-outline-icon></user-circle-outline-icon>\n            Profile</a>\n        <a href=\"#\"\n            class=\"flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500\"><cog-outline-icon></cog-outline-icon>\n            Account</a>\n        <a href=\"#\"\n            class=\"flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500\"><key-outline-icon></key-outline-icon>\n            Password</a>\n        <a href=\"#\"\n            class=\"flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500\"><bell-outline-icon></bell-outline-icon>\n            Notification</a>\n        <a href=\"#\"\n            class=\"flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500\"><credit-card-outline-icon></credit-card-outline-icon>\n            Billing</a>\n        <a href=\"#\"\n            class=\"flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500\"><squares-plus-outline-icon></squares-plus-outline-icon>\n            Integrations</a>\n    </div>\n</div>"
+        },
+        {
+            "name": "SignInFormComponent",
+            "id": "component-SignInFormComponent-f82cae88f3d8238b25f202528a21437669f166ec08a82d483cd9b10e097ee704bd4e797e4d6d90a25a2ab7598be2c7ee451a93f01be6bde2b49ff8f21d58bd3a",
+            "file": "src/app/components/page/sigin/form.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "val-form",
+            "styleUrls": [
+                "./form.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./form.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'val-form',\n  templateUrl: './form.component.html',\n  styleUrls: ['./form.component.scss']\n})\nexport class SignInFormComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./form.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"bg-gradient-to-b from-cyan-500 to-blue-500 \">\n    <img src=\"\" alt=\"\">\n    <div class=\"w-full h-full px-2 bg-white flex flex-col  gap-3 md:w-3/5 lg:w-1/2 xl:w-2/5\">\n        <h1 class=\"font-bold text-4xl self-center md:self-start\">Sign in to your account</h1>\n        <blockquote class=\"self-center md:self-start\">Or <a href=\"#\" class=\"text-indigo-500 hover:font-medium\"> start your 14-day free trial</a> </blockquote>\n\n        <p class=\"text-center font-medium md:self-start\">Sign in with</p>\n        <div class=\"flex flex-col items-center gap-3 sm:flex-row sm:justify-evenly\">\n            <button class=\"border w-40 py-1 px-10 rounded-md hover:text-white hover:bg-blue-700 hover:border-none\">Facebook</button>\n            <button class=\"border w-40 py-1 px-10 rounded-md hover:text-white hover:bg-blue-500 hover:border-none\">Twitter</button>\n            <button class=\"border w-40 py-1 px-10 rounded-md hover:text-white hover:bg-indigo-500 hover:border-none\">GitHub</button>\n        </div>\n\n        <div class=\"flex items-center mx-2\">\n            <div class=\"flex-grow border-t-2\"></div>\n            <p class=\"text-gray-500\">Or continue with</p>\n            <div class=\"flex-grow border-t-2\"></div>\n        </div>\n\n        <div class=\"flex flex-col space-y-2 text-center md:text-start\">\n            <p class=\"font-medium\">Email address</p>\n            <input class=\"border rounded-md p-2\" type=\"text\">\n        </div>\n\n        <div class=\"flex flex-col space-y-2 mt-2 text-center md:text-start \">\n            <p class=\"font-medium\">Password</p>\n            <input class=\"border rounded-md p-2\" type=\"text\">\n        </div>\n\n        <div class=\"flex flex-col  items-center gap-3 md:flex-row md:justify-between\">\n            <div class=\"flex gap-2\">\n                <input type=\"checkbox\" name=\"\" id=\"remember-me\">\n                <label for=\"remember-me\">Remember me</label>\n            </div>    \n            <a href=\"#\" class=\"text-indigo-500 font-medium hover:font-bold\">Forgot your password?</a>\n        </div>\n\n        <button class=\"w-full bg-indigo-500 text-white font-medium rounded-md py-1 mt-2 hover:text-indigo-500 hover:border hover:bg-white hover:border-indigo-500\">Sign in</button>\n\n    </div>\n</div>"
         }
     ],
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-8bdd1c0ded266660fbac11606f3fca805172dcbaac4c9df6635c38e871a6ef01c2459318472505cf50c5486ab8f4628ccdd863f2457ea76229d09b50bfd90a00",
+            "id": "module-AppModule-03d83a3838ee0e1b9ac2238a24acbefa7fdce89669d3816dbe3fdd199115edcba6605da381f8ad16f8b05b645d441cf8dea1f45858906f1006c80c8934237088",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent } from './app.component';\r\nimport { NavbarComponent } from './components/navigation/navbar/navbar.component';\r\nimport { NgHeroiconsModule } from \"@dimaslz/ng-heroicons\";\r\nimport { SideNavbarComponent } from './components/navigation/side-navbar/side-navbar.component';\nimport { CheckboxSliderComponent } from './components/basics/checkbox-slider/checkbox-slider.component';\nimport { SettingsComponent } from './components/page/settings/settings.component';\nimport { ButtonComponent } from './components/basics/button/button.component';\nimport { DividerComponent } from './components/basics/divider/divider.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    NavbarComponent,\r\n    SideNavbarComponent,\r\n    CheckboxSliderComponent,\r\n    SettingsComponent,\r\n    ButtonComponent,\r\n    DividerComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    NgHeroiconsModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule {\r\n}\r\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppComponent } from './app.component';\r\nimport { NavbarComponent } from './components/navigation/navbar/navbar.component';\r\nimport { NgHeroiconsModule } from \"@dimaslz/ng-heroicons\";\r\nimport { SideNavbarComponent } from './components/navigation/side-navbar/side-navbar.component';\nimport { CheckboxSliderComponent } from './components/basics/checkbox-slider/checkbox-slider.component';\nimport { SettingsComponent } from './components/page/settings/settings.component';\nimport { ButtonComponent } from './components/basics/button/button.component';\nimport { DividerComponent } from './components/basics/divider/divider.component';\nimport { SiginComponent } from './components/page/sigin/sigin.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    NavbarComponent,\r\n    SideNavbarComponent,\r\n    CheckboxSliderComponent,\r\n    SettingsComponent,\r\n    ButtonComponent,\r\n    DividerComponent,\r\n    SiginComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    NgHeroiconsModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule {\r\n}\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -543,6 +605,26 @@
                 "name": "baseTemplate",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/navigation/navbar/navbar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "baseTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "baseTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/basics/button/sign-in.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -573,17 +655,7 @@
                 "name": "baseTemplate",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
-            },
-            {
-                "name": "baseTemplate",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/navigation/navbar/navbar.stories.ts",
+                "file": "src/app/components/page/sigin/form.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -603,6 +675,26 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/navigation/navbar/navbar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "baseTemplate.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "baseTemplate.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/basics/button/sign-in.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -633,17 +725,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "baseTemplate.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/navigation/navbar/navbar.stories.ts",
+                "file": "src/app/components/page/sigin/form.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -664,6 +746,50 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "src/app/components/navigation/navbar/navbar.stories.ts": [
+                {
+                    "name": "baseTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/navigation/navbar/navbar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/navigation/navbar/navbar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "baseTemplate.bind({})"
+                }
+            ],
+            "src/app/components/navigation/side-navbar/side-navbar.stories.ts": [
+                {
+                    "name": "baseTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "baseTemplate.bind({})"
+                }
+            ],
             "src/app/components/basics/button/sign-in.stories.ts": [
                 {
                     "name": "baseTemplate",
@@ -730,12 +856,12 @@
                     "defaultValue": "baseTemplate.bind({})"
                 }
             ],
-            "src/app/components/navigation/side-navbar/side-navbar.stories.ts": [
+            "src/app/components/page/sigin/form.stories.ts": [
                 {
                     "name": "baseTemplate",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
+                    "file": "src/app/components/page/sigin/form.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -745,29 +871,7 @@
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/navigation/side-navbar/side-navbar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "baseTemplate.bind({})"
-                }
-            ],
-            "src/app/components/navigation/navbar/navbar.stories.ts": [
-                {
-                    "name": "baseTemplate",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/navigation/navbar/navbar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "(args) => ({\r\n  props: args,\r\n})"
-                },
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/navigation/navbar/navbar.stories.ts",
+                    "file": "src/app/components/page/sigin/form.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -981,6 +1085,35 @@
             },
             {
                 "filePath": "src/app/components/page/settings/settings.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/page/sigin/form.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SignInFormComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/page/sigin/form.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "baseTemplate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/page/sigin/form.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
