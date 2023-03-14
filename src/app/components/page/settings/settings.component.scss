@@ -1,31 +1,30 @@
-input:checked ~ .dot-1 {
-    transform: translateX(100%);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:checked {
+  &~ .dot-1 {
+    @apply translate-x-full
   }
-
-  input:checked ~ .bg-dot-1 {
-  background-color: #14B8A6;
-}
-
-input:checked ~ .dot-2 {
-    transform: translateX(100%);
+  &~ .bg-dot-1 {
+    @apply bg-teal-500
   }
-
-  input:checked ~ .bg-dot-2 {
-  background-color: #14B8A6;
-}
-
-input:checked ~ .dot-3 {
-    transform: translateX(100%);
+  &~ .dot-2 {
+    @apply translate-x-full
   }
-
-  input:checked ~ .bg-dot-3 {
-  background-color: #14B8A6;
-}
-
-input:checked ~ .dot-4 {
-    transform: translateX(100%);
+  &~ .bg-dot-2 {
+    @apply bg-teal-500
   }
-
-  input:checked ~ .bg-dot-4 {
-  background-color: #14B8A6;
+  &~ .dot-3 {
+    @apply translate-x-full
+  }
+  &~ .bg-dot-3 {
+    @apply bg-teal-500
+  }
+  &~ .dot-4 {
+    @apply translate-x-full
+  }
+  &~ .bg-dot-4 {
+    @apply bg-teal-500
+  }
 }
