@@ -1,14 +1,26 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import {AppComponent} from './app.component';
-import {NavbarComponent} from './components/navigation/navbar/navbar.component';
-import {NgHeroiconsModule} from "@dimaslz/ng-heroicons";
+import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navigation/navbar/navbar.component';
+import { NgHeroiconsModule } from "@dimaslz/ng-heroicons";
+import { SideNavbarComponent } from './components/navigation/side-navbar/side-navbar.component';
+import { CheckboxSliderComponent } from './components/basics/checkbox-slider/checkbox-slider.component';
+import { SettingsComponent } from './components/page/settings/settings.component';
+import { ButtonComponent } from './components/basics/button/button.component';
+import { DividerComponent } from './components/basics/divider/divider.component';
+import { SignInFormComponent } from './components/page/form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    SideNavbarComponent,
+    CheckboxSliderComponent,
+    SettingsComponent,
+    ButtonComponent,
+    DividerComponent,
+    SignInFormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,197 @@
+<div class="pr-3 flex flex-col select-none lg:flex-row">
+    <div [ngClass]="{'h-10':isMenuOpen}" class="lg:hidden"></div>
+
+    <div [ngClass]="{'h-full border-r-2 fixed':isMenuOpen}" class="bg-white z-10 w-full sm:w-1/4">
+        <div class="hidden lg:flex lg:flex-col h-full border-r-2 pt-4">
+            <a href="#"
+                class="flex gap-3 pl-2 border-l-4 bg-teal-50 border-l-teal-500 py-2"><user-circle-outline-icon></user-circle-outline-icon>
+                Profile</a>
+            <a href="#"
+                class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><cog-outline-icon></cog-outline-icon>
+                Account</a>
+            <a href="#"
+                class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><key-outline-icon></key-outline-icon>
+                Password</a>
+            <a href="#"
+                class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><bell-outline-icon></bell-outline-icon>
+                Notification</a>
+            <a href="#"
+                class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><credit-card-outline-icon></credit-card-outline-icon>
+                Billing</a>
+            <a href="#"
+                class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><squares-plus-outline-icon></squares-plus-outline-icon>
+                Integrations</a>
+        </div>
+        <div class="hover:bg-gray-700 hover:text-gray-200 p-2 w-10 rounded-lg lg:hidden">
+            <bars-3-outline-icon *ngIf="!isMenuOpen" (click)="toggleMenu()" class=""></bars-3-outline-icon>
+
+            <x-mark-outline-icon *ngIf="isMenuOpen" (click)="toggleMenu()" class=""></x-mark-outline-icon>
+        </div>
+
+        <div *ngIf="isMenuOpen" class="pt-4 flex flex-col text-gray-700 font-medium lg:hidden">
+            <a href="#"
+                class="flex gap-3 pl-2 border-l-4 bg-teal-50 border-l-teal-500 py-2"><user-circle-outline-icon></user-circle-outline-icon>
+                Profile</a>
+            <a href="#"
+                class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><cog-outline-icon></cog-outline-icon>
+                Account</a>
+            <a href="#"
+                class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><key-outline-icon></key-outline-icon>
+                Password</a>
+            <a href="#"
+                class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><bell-outline-icon></bell-outline-icon>
+                Notification</a>
+            <a href="#"
+                class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><credit-card-outline-icon></credit-card-outline-icon>
+                Billing</a>
+            <a href="#"
+                class="flex gap-3 pl-2 py-2 hover:bg-teal-50 active:bg-teal-50 active:border-l-4 active:border-l-teal-500"><squares-plus-outline-icon></squares-plus-outline-icon>
+                Integrations</a>
+        </div>
+    </div>
+    <div class="flex flex-col lg:w-full pt-4">
+        <div class=" flex flex-col gap-3 border-b-2 pb-5 mb-5 pl-6">
+
+            <div class="flex flex-col lg:flex-row-reverse lg:justify-between">
+                <div class="self-center flex flex-col space-y-2">
+                    <h2 class="text-2xl font-medium">Photo</h2>
+                    <img class="h-36 w-36 rounded-full ml-3 mr-2 lg:h-52 lg:w-52"
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt="">
+                </div>
+
+                <div class="flex flex-col lg:w-3/4">
+                    <div class="flex flex-col space-y-2">
+                        <h2 class="text-2xl font-medium">Profile</h2>
+                        <p class="text-gray-600">This information will be displayed publicly so be careful what you share.</p>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <h2 class="text-xl font-medium">Username</h2>
+                        <div class="flex justify-start">
+                            <input class="border border-gray-300 rounded-l-md w-1/2 pl-2 py-1 sm:w-1/3 md:1/5"
+                                placeholder="workcation.com/" type="text">
+                            <input class="border border-gray-300 rounded-r-md w-1/2 pl-2 py-1 sm:w-2/3 md:4/5" value="deblewis"
+                                type="text">
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <h2 class="text-xl font-medium">About</h2>
+                        <textarea name="" id="" cols="30" rows="5"
+                            class="border border-gray-300 rounded-md py-1 pl-2"></textarea>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col items-center space-y-2 sm:flex-row sm:justify-between sm:gap-4 sm:space-y-0">
+                <div class="flex flex-col w-full space-y-2 sm:w-1/2">
+                    <h2 class="text-xl font-medium">First name</h2>
+                    <input type="text" class="border border-gray-300 rounded-md py-1 pl-2">
+                </div>
+
+                <div class="flex flex-col w-full space-y-2 sm:w-1/2">
+                    <h2 class="text-xl font-medium">Last name</h2>
+                    <input type="text" class="border border-gray-300 rounded-md py-1 pl-2">
+                </div>
+            </div>
+
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-xl font-medium">URL</h2>
+                <input type="text" class="border border-gray-300 rounded-md py-1 pl-2">
+            </div>
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-xl font-medium">Company</h2>
+                <input type="text" class="border border-gray-300 rounded-md py-1 pl-2">
+            </div>
+
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-2xl font-medium">Privacy</h2>
+                <p class="text-gray-600">Ornare eu a volutpat eget vulputate. Fringilla commodo amet.</p>
+            </div>
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-xl font-medium">Available to hire</h2>
+                <div class="flex justify-between">
+                    <p class="text-gray-600">Nulla amet tempus sit accumsan. Aliquet turpis sed sit lacinia.</p>
+
+                    <div class="flex items-center justify-center ">
+                        <label for="toggle-1" class="flex items-center cursor-pointer">
+                            <div class="relative">
+                                <input type="checkbox" id="toggle-1" class="sr-only">
+                                <div class="bg-dot-1 block bg-gray-200 w-14 h-8 rounded-full transition-colors"></div>
+                                <div class="dot-1 absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                            </div>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-xl font-medium">Make account private</h2>
+                <div class="flex justify-between">
+                    <p class="text-gray-600">Pharetra morbi dui mi mattis tellus sollicitudin cursus pharetra.</p>
+
+                    <div class="flex items-center justify-center ">
+                        <label for="toggle-2" class="flex items-center cursor-pointer">
+                            <div class="relative">
+                                <input type="checkbox" id="toggle-2" class="sr-only">
+                                <div class="bg-dot-2 block bg-gray-200 w-14 h-8 rounded-full transition-colors"></div>
+                                <div class="dot-2 absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                            </div>
+                        </label>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-xl font-medium">Allow commenting</h2>
+                <div class="flex justify-between">
+                    <p class="text-gray-6 00">Integer amet, nunc hendrerit adipiscing nam. Elementum ame</p>
+
+                    <div class="flex items-center justify-center ">
+                        <label for="toggle-3" class="flex items-center cursor-pointer">
+                            <div class="relative">
+                                <input type="checkbox" id="toggle-3" class="sr-only">
+                                <div class="bg-dot-3 block bg-gray-200 w-14 h-8 rounded-full transition-colors"></div>
+                                <div class="dot-3 absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                            </div>
+                        </label>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="flex flex-col space-y-2">
+                <h2 class="text-xl font-medium">Allow mentions</h2>
+                <div class="flex justify-between">
+                    <p class="text-gray-600">Adipiscing est venenatis enim molestie commodo eu gravid</p>
+
+                    <div class="flex items-center justify-center ">
+                        <label for="toggle-4" class="flex items-center cursor-pointer">
+                            <div class="relative">
+                                <input type="checkbox" id="toggle-4" class="sr-only">
+                                <div class="bg-dot-4 block bg-gray-200 w-14 h-8 rounded-full transition-colors"></div>
+                                <div class="dot-4 absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                            </div>
+                        </label>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between lg:justify-end lg:gap-4">
+            <button
+                class="border-2 rounded-md p-2 px-3 font-medium hover:text-white hover:bg-red-700 hover:border-red-700">Cancel</button>
+            <button
+                class="border rounded-md p-2 px-3 font-medium text-white bg-blue-700 hover:text-blue-700 hover:bg-white hover:border-blue-700">Save</button>
+        </div>
+    </div>
+
+
+</div>

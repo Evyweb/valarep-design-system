@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:checked {
+  &~ .dot-1 {
+    @apply translate-x-full
+  }
+  &~ .bg-dot-1 {
+    @apply bg-teal-500
+  }
+  &~ .dot-2 {
+    @apply translate-x-full
+  }
+  &~ .bg-dot-2 {
+    @apply bg-teal-500
+  }
+  &~ .dot-3 {
+    @apply translate-x-full
+  }
+  &~ .bg-dot-3 {
+    @apply bg-teal-500
+  }
+  &~ .dot-4 {
+    @apply translate-x-full
+  }
+  &~ .bg-dot-4 {
+    @apply bg-teal-500
+  }
+}
