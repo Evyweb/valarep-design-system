@@ -1,17 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'val-settings',
   templateUrl: './settings.component.html',
   styleUrls: ['./settings.component.scss']
 })
-export class SettingsComponent implements OnInit {
+export class SettingsComponent {
 
   isMenuOpen: boolean = false;
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
   toggleMenu(){
     this.isMenuOpen = !this.isMenuOpen
