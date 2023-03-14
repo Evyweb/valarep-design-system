@@ -1,21 +1,13 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-
-import {AppComponent} from './app.component';
-import {CardComponent} from './components/cards/card/card.component';
-import {NgHeroiconsModule} from "@dimaslz/ng-heroicons";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { GridComponent } from './grid/grid.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CardComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgHeroiconsModule
-  ],
+  declarations: [AppComponent, GridComponent, PaymentComponent],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
