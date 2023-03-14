@@ -4,11 +4,13 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 import {NavbarComponent} from './components/navigation/navbar/navbar.component';
 import {NgHeroiconsModule} from "@dimaslz/ng-heroicons";
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
