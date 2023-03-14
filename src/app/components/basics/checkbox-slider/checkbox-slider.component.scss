@@ -1,7 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 input:checked ~ .dot {
-    transform: translateX(100%);
+    @apply translate-x-full
   }
 
 input:checked ~ .bg-dot {
-  background-color: #14B8A6;
+  @apply bg-teal-500
 }
