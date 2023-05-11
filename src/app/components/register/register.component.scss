@@ -1,9 +1,15 @@
 form div {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0 10px 0;
+    @apply flex flex-col my-2
 }
 
 form div label {
-    margin: 5px 0;
+    @apply mt-1
+}
+
+.title {
+    @apply text-2xl font-bold mb-5
+}
+
+form div input {
+    @apply py-1 px-2 border-solid border-2 border-gray-100 rounded-sm bg-white outline-none placeholder-black block
 }
